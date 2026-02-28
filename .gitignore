@@ -1,0 +1,16 @@
+# Ignore downloaded NASA data and images
+*.fits
+*.png
+*.jpg
+sdo_images/
+
+# Ignore generated CSV data
+*.csv
+data/
+
+# Standard Python ignores
+__pycache__/
+*.pyc
+.venv/
+env/
+.DS_Store

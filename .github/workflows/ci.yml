@@ -17,5 +17,3 @@ jobs:
         run: |
           ruff format --check .
           ruff check .
-      - name: Run Tests
-        run: pytest

@@ -12,13 +12,11 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import scipy as spy
 import astropy.io as ast
 from sunpy.net import Fido, attrs as a
 from glob import glob
 from math import asin, cos, sin, pi
 from datetime import datetime
-import math
 
 # %%
 """
@@ -52,10 +50,10 @@ def extract_metadata(filepath):
     with ast.fits.open(filepath) as hdulist:
         file_header = hdulist[1].header
         file_data = hdulist[1].data
-        sun_x_coord = file_header["CRPIX1"]
-        sun_y_coord = file_header["CRPIX2"]
-        sun_radius = file_header["RSUN_OBS"]
-        pixel_arcsecs = file_header["CDELT1"]
+        file_header["CRPIX1"]
+        file_header["CRPIX2"]
+        file_header["RSUN_OBS"]
+        file_header["CDELT1"]
     return file_header, file_data
 
 
